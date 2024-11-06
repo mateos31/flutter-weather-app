@@ -76,12 +76,11 @@ class _WeatherPageState extends State<WeatherPage> {
               SizedBox(
                 height: 10,
               ),
-
               Column(children: [
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.location_on),
+                Icon(
+                  Icons.location_on,
                   color: Color.fromRGBO(120, 120, 120, 1),
+                  size: 42,
                 ),
                 Text(
                   _weather?.cityName ?? "loading city...",
